@@ -24,3 +24,8 @@ steps:
 
 images:
   - gcr.io/flaskworldapp1-457200/flaskworldapp1
+
+serviceAccount: "592235174786@cloudbuild.gserviceaccount.com"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
