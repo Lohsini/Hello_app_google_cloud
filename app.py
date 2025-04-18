@@ -1,3 +1,4 @@
+import os
 from flask import Flask,Response,jsonify, render_template ,logging,request
 app = Flask(__name__)
 
@@ -7,4 +8,5 @@ def home():
 
 #run server
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
